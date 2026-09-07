@@ -1,66 +1,76 @@
 # Test Plan – PKO Bank Polski Internet Banking (Portfolio Project)
 
-| | |
-|---|---|
-| **Document Version** | 1.0 |
-| **Author** | Paweł |
-| **Date** | 07 September 2026 |
-| **Project Type** | Manual Testing Portfolio Project |
+**Document Version:** 1.0
 
-> **Disclaimer:** This is an independent portfolio project created for educational purposes. It is not affiliated with, endorsed by, or conducted on behalf of PKO Bank Polski.
+**Author:** Paweł
+
+**Date:** September 7, 2026
+
+**Project Type:** Manual Testing Portfolio Project
+
+> **Disclaimer:** This is an independent portfolio project created for educational purposes. It is not affiliated with or conducted on behalf of PKO Bank Polski.
 
 ---
 
-## 1. Objective
+# 1. Objective
 
 The objective of this testing activity is to verify that the core user-facing functionalities of an online banking application work correctly, provide appropriate validation, and deliver a reliable user experience.
 
-The focus is on **functional testing** of essential banking operations from a customer's perspective.
+The focus is on functional testing of essential banking operations from a customer's perspective.
 
 ---
 
-## 2. Scope
+# 2. Scope
 
-### 2.1 In Scope
-- Login page and authentication validation
+## In Scope
+
+- Login page
+- Authentication validation
 - Dashboard overview
 - Account balance display
 - Transaction history
-- Money transfer form and validation
+- Money transfer form
+- Form validation
 - Logout functionality
 - Basic responsive behavior
 
-### 2.2 Out of Scope
+## Out of Scope
+
 - Internal banking systems
 - Payment processing infrastructure
-- Security / penetration testing
+- Security penetration testing
 - Performance testing
-- Mobile application (native app)
+- Mobile application
 - Administrative features
 
 ---
 
-## 3. Test Objectives
+# 3. Test Objectives
 
-Testing aims to verify:
-1. Correct functionality of critical user flows
-2. Proper validation of mandatory fields
-3. Error handling and user feedback
-4. Navigation between core pages
-5. Consistent behavior across supported browsers
-6. Basic responsiveness
+The testing aims to verify:
+
+- Correct functionality of critical user flows.
+- Proper validation of mandatory fields.
+- Error handling and user feedback.
+- Navigation between core pages.
+- Consistent behavior across supported browsers.
+- Basic responsiveness.
 
 ---
 
-## 4. Test Strategy
+# 4. Test Strategy
 
-### 4.1 Test Types
-- Functional Testing (Positive / Negative)
+## Test Types
+
+- Functional Testing
+- Positive Testing
+- Negative Testing
 - Regression Testing (selected features)
 - UI Testing
 - Exploratory Testing
 
-### 4.2 Test Design Techniques
+## Test Design Techniques
+
 - Equivalence Partitioning
 - Boundary Value Analysis
 - Error Guessing
@@ -68,23 +78,27 @@ Testing aims to verify:
 
 ---
 
-## 5. Test Environment
+# 5. Test Environment
 
-| Component | Version / Detail |
-|---|---|
+| Component | Version |
+|-----------|---------|
 | Operating System | Windows 11 |
 | Google Chrome | Latest |
 | Microsoft Edge | Latest |
 | Mozilla Firefox | Latest |
 | Screen Resolution | 1920×1080 |
-| Mobile Check | Android device – Chrome Mobile |
+
+### Mobile Check
+
+- Android device
+- Chrome Mobile
 
 ---
 
-## 6. Test Data
+# 6. Test Data
 
 | Data | Purpose |
-|---|---|
+|------|---------|
 | Valid test credentials | Login |
 | Invalid password | Negative login |
 | Invalid account number | Transfer validation |
@@ -93,42 +107,48 @@ Testing aims to verify:
 
 ---
 
-## 7. Features to Be Tested
+# 7. Features to be Tested
 
-### 7.1 Authentication
+## Authentication
+
 - Successful login
 - Invalid password
 - Empty username
 - Empty password
 - Error message verification
 
-### 7.2 Dashboard
+## Dashboard
+
 - Account balance visibility
 - Navigation availability
 - Basic page loading
 
-### 7.3 Transaction History
+## Transaction History
+
 - Transaction list display
 - Transaction details
 - Date consistency
 
-### 7.4 Money Transfer
+## Money Transfer
+
 - Valid transfer data
 - Invalid account number
 - Empty mandatory fields
 - Zero amount
 - Maximum allowed values (validation)
 
-### 7.5 Logout
+## Logout
+
 - Manual logout
 - Session termination
 - Back button behavior after logout
 
 ---
 
-## 8. Entry Criteria
+# 8. Entry Criteria
 
 Testing begins when:
+
 - The application is accessible.
 - The test environment is available.
 - Test credentials are prepared.
@@ -136,9 +156,10 @@ Testing begins when:
 
 ---
 
-## 9. Exit Criteria
+# 9. Exit Criteria
 
 Testing is considered complete when:
+
 - All planned test cases have been executed.
 - Critical and High severity defects have been documented.
 - Test execution results have been summarized.
@@ -146,10 +167,10 @@ Testing is considered complete when:
 
 ---
 
-## 10. Risk Assessment
+# 10. Risk Assessment
 
 | Risk | Impact |
-|---|---|
+|------|--------|
 | UI changes during testing | Medium |
 | Temporary service unavailability | High |
 | Browser compatibility issues | Medium |
@@ -157,10 +178,10 @@ Testing is considered complete when:
 
 ---
 
-## 11. Test Priorities
+# 11. Test Priorities
 
 | Priority | Area |
-|---|---|
+|----------|------|
 | Critical | Login |
 | Critical | Money Transfer |
 | High | Dashboard |
@@ -170,19 +191,20 @@ Testing is considered complete when:
 
 ---
 
-## 12. Deliverables
+# 12. Deliverables
 
-This portfolio project will include the following documentation:
-1. Test Plan
-2. Test Scenarios
-3. Test Cases
-4. Bug Reports
-5. Testing Checklist
-6. Test Summary Report
+The following documentation will be included in this portfolio project:
+
+- Test Plan
+- Test Scenarios
+- Test Cases
+- Bug Reports
+- Testing Checklist
+- Test Summary Report
 
 ---
 
-## 13. Assumptions
+# 13. Assumptions
 
 - Testing is performed from the perspective of an end user.
 - No real financial transactions are intentionally executed.
