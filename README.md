@@ -10,7 +10,7 @@ reporting bugs — while continuing to develop API testing and SQL skills.
 ## Skills
 - **Testing:** Manual testing, test case design from business requirements,
   exploratory testing, bug reporting and documentation
-- **Tools:** Jira, Confluence, Postman, Swagger, Chrome DevTools, Git
+- **Tools:** Jira, Confluence, Chrome DevTools, Git
 - **AI-assisted testing:** Using AI tools to support requirements analysis and
   test documentation
 - **API Testing:** Postman, Swagger (REST API basics)
