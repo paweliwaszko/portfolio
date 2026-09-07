@@ -29,5 +29,5 @@ Test cases derived from business/functional requirements for [app/feature].
 
 ## Contact
 - Email: pawel.iwaszko2@gmail.com
-- LinkedIn: [add if you have one]
+- LinkedIn: www.linkedin.com/in/paweł-iwaszko-a73793344
 - Location: Drezdenko, Poland
