@@ -1,5 +1,4 @@
-[Test_Plan_PKO_Internet_Banking.md](https://github.com/user-attachments/files/31916863/Test_Plan_PKO_Internet_Banking.md)
-# Test Plan – PKO Bank Polski Internet Banking (Portfolio Project)
+# Test Plan – ParaBank Demo Platform (Portfolio Project)
 
 | | |
 |---|---|
@@ -7,14 +6,15 @@
 | **Author** | Paweł |
 | **Date** | 07 September 2026 |
 | **Project Type** | Manual Testing Portfolio Project |
+| **Application Under Test** | ParaBank Demo Site (parabank.parasoft.com) |
 
-> **Disclaimer:** This is an independent portfolio project created for educational purposes. It is not affiliated with, endorsed by, or conducted on behalf of PKO Bank Polski.
+> **Disclaimer:** ParaBank is a publicly available demo banking application provided by Parasoft for testing practice. This test plan is an independent portfolio project created for educational purposes and is not affiliated with or conducted on behalf of Parasoft.
 
 ---
 
 ## 1. Objective
 
-The objective of this testing activity is to verify that the core user-facing functionalities of an online banking application work correctly, provide appropriate validation, and deliver a reliable user experience.
+The objective of this testing activity is to verify that the core user-facing functionalities of the ParaBank demo banking application work correctly, provide appropriate validation, and deliver a reliable user experience.
 
 The focus is on **functional testing** of essential banking operations from a customer's perspective.
 
@@ -23,21 +23,25 @@ The focus is on **functional testing** of essential banking operations from a cu
 ## 2. Scope
 
 ### 2.1 In Scope
+- Registration page
 - Login page and authentication validation
-- Dashboard overview
-- Account balance display
-- Transaction history
-- Money transfer form and validation
+- Accounts Overview page
+- Open New Account
+- Transfer Funds
+- Bill Pay
+- Find Transactions
+- Update Contact Info
+- Request Loan
 - Logout functionality
 - Basic responsive behavior
 
 ### 2.2 Out of Scope
-- Internal banking systems
+- Backend/database validation beyond UI-visible results
 - Payment processing infrastructure
 - Security / penetration testing
-- Performance testing
+- Performance / load testing
 - Mobile application (native app)
-- Administrative features
+- Third-party integrations (e.g., ParaBank's SOAP/REST web services)
 
 ---
 
@@ -79,6 +83,7 @@ Testing aims to verify:
 | Mozilla Firefox | Latest |
 | Screen Resolution | 1920×1080 |
 | Mobile Check | Android device – Chrome Mobile |
+| Test URL | https://parabank.parasoft.com/parabank/index.htm |
 
 ---
 
@@ -86,41 +91,74 @@ Testing aims to verify:
 
 | Data | Purpose |
 |---|---|
-| Valid test credentials | Login |
-| Invalid password | Negative login |
-| Invalid account number | Transfer validation |
+| Newly registered test account | Login / Accounts Overview |
+| Invalid username / password | Negative login |
+| Invalid account number | Transfer / Bill Pay validation |
 | Empty required fields | Validation testing |
-| Various transfer amounts | Boundary testing |
+| Various transfer and payment amounts | Boundary testing |
+| Sample payee details (Bill Pay) | Bill payment testing |
 
 ---
 
 ## 7. Features to Be Tested
 
-### 7.1 Authentication
+### 7.1 Registration
+- Successful registration with valid data
+- Duplicate username
+- Empty mandatory fields
+- Password/confirm password mismatch
+- Field-level validation messages
+
+### 7.2 Authentication
 - Successful login
 - Invalid password
 - Empty username
 - Empty password
 - Error message verification
 
-### 7.2 Dashboard
+### 7.3 Accounts Overview
+- Account list display
 - Account balance visibility
-- Navigation availability
+- Navigation to account details
 - Basic page loading
 
-### 7.3 Transaction History
-- Transaction list display
-- Transaction details
-- Date consistency
+### 7.4 Open New Account
+- Successful account creation (Checking/Savings)
+- Account creation with insufficient funding source
+- Confirmation message and new account ID display
 
-### 7.4 Money Transfer
-- Valid transfer data
-- Invalid account number
+### 7.5 Transfer Funds
+- Valid transfer between own accounts
+- Transfer with insufficient balance
 - Empty mandatory fields
-- Zero amount
-- Maximum allowed values (validation)
+- Zero or negative amount
+- Confirmation message accuracy
 
-### 7.5 Logout
+### 7.6 Bill Pay
+- Valid bill payment
+- Empty mandatory fields
+- Invalid payee account details
+- Zero or negative amount
+- Confirmation message accuracy
+
+### 7.7 Find Transactions
+- Search by date
+- Search by date range
+- Search by amount
+- Search by transaction ID
+- No results found handling
+
+### 7.8 Update Contact Info
+- Successful update of profile details
+- Empty mandatory fields
+- Invalid data formats (e.g., phone, zip code)
+
+### 7.9 Request Loan
+- Loan approval scenario
+- Loan denial scenario
+- Empty mandatory fields
+
+### 7.10 Logout
 - Manual logout
 - Session termination
 - Back button behavior after logout
@@ -130,9 +168,9 @@ Testing aims to verify:
 ## 8. Entry Criteria
 
 Testing begins when:
-- The application is accessible.
+- The ParaBank demo site is accessible.
 - The test environment is available.
-- Test credentials are prepared.
+- Test account(s) are registered/prepared.
 - Browsers are updated.
 
 ---
@@ -151,6 +189,7 @@ Testing is considered complete when:
 
 | Risk | Impact |
 |---|---|
+| Shared public demo environment (data reset/shared by other users) | High |
 | UI changes during testing | Medium |
 | Temporary service unavailability | High |
 | Browser compatibility issues | Medium |
@@ -163,11 +202,15 @@ Testing is considered complete when:
 | Priority | Area |
 |---|---|
 | Critical | Login |
-| Critical | Money Transfer |
-| High | Dashboard |
-| High | Transaction History |
-| Medium | Logout |
-| Medium | Responsive Layout |
+| Critical | Transfer Funds |
+| Critical | Bill Pay |
+| High | Accounts Overview |
+| High | Registration |
+| Medium | Find Transactions |
+| Medium | Open New Account |
+| Medium | Update Contact Info |
+| Low | Request Loan |
+| Low | Logout / Responsive Layout |
 
 ---
 
@@ -185,8 +228,7 @@ This portfolio project will include the following documentation:
 
 ## 13. Assumptions
 
-- Testing is performed from the perspective of an end user.
-- No real financial transactions are intentionally executed.
-- The project focuses on demonstrating manual testing methodology rather than auditing the banking system itself.
-
-Add Test Plan for banking application
+- Testing is performed from the perspective of an end user, using a self-registered ParaBank test account.
+- No real financial transactions are involved, as ParaBank is a demo application with simulated data.
+- Because ParaBank is a shared public demo environment, some data (e.g., other users' transactions) may be visible or inconsistent, and this is expected rather than treated as a defect.
+- The project focuses on demonstrating manual testing methodology rather than auditing the ParaBank application itself.
