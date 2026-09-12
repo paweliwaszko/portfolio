@@ -180,9 +180,9 @@ I want to use my previous professional experience, attention to detail, analytic
 
 ## 📫 Contact
 
-- **LinkedIn:** [Add your LinkedIn URL here]
-- **Email:** Add your email here
-- **GitHub:** [Add your GitHub profile URL here]
+- **LinkedIn:** [[Add your LinkedIn URL here](https://www.linkedin.com/in/pawe%C5%82-iwaszko-a73793344/)]
+- **Email:** pawel.iwaszko2@gmail.com
+
 
 ---
 
