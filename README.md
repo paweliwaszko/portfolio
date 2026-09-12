@@ -1,33 +1,196 @@
-# Paweł Iwaszko — QA / Manual Testing Portfolio
+# 👋 Hi, I'm Paweł — Junior Manual QA Tester
 
-## About Me
-Engineering graduate transitioning into QA/software testing, bringing a background
-in quality control, process documentation, and requirements analysis from
-production/manufacturing. Currently building hands-on manual testing experience —
-designing test cases from business requirements, documenting results, and
-reporting bugs — while continuing to develop API testing and SQL skills.
+I am a Junior Manual QA Tester focused on software quality, functional testing, and continuous development in the QA field.
 
-## Skills
-- **Testing:** Manual testing, test case design from business requirements,
-  exploratory testing, bug reporting and documentation
-- **Tools:** Jira, Confluence, Chrome DevTools, Git
-- **AI-assisted testing:** Using AI tools to support requirements analysis and
-  test documentation
-- **API Testing:** Postman, Swagger (REST API basics)
-- **Databases:** SQL (basic queries)
-- **Methodologies:** Agile (Scrum, Kanban)
-- **Languages:** English (B2)
+I hold the **ISTQB Certified Tester Foundation Level (CTFL)** certification and have completed practical software testing courses.
 
-## Certifications
-- ISTQB Certified Tester Foundation Level (CTFL) — 2026
+Before transitioning into IT, I gained around **10 years of professional experience in a family business**, where I was responsible for procurement, documentation, quality control, problem solving, and day-to-day operational processes.
 
-## Projects
+I am currently developing my QA skills through practical projects involving **manual web application testing, API testing, SQL, test management, and bug reporting**.
 
-### 1. [Project Name] — Test Case Design
-Test cases derived from business/functional requirements for [app/feature].
-🔗 [Link]
+---
 
-## Contact
-- Email: pawel.iwaszko2@gmail.com
-- LinkedIn: www.linkedin.com/in/paweł-iwaszko-a73793344
-- Location: Drezdenko, Poland
+## 🧪 QA Skills
+
+### Manual Testing
+- Functional Testing
+- Regression Testing
+- Smoke Testing
+- Exploratory Testing
+- Positive & Negative Testing
+- Boundary Value Analysis
+- Equivalence Partitioning
+- Decision Tables
+- Test Scenario Design
+- Test Case Design
+- Bug Reporting
+- Test Execution
+- Test Documentation
+
+### Tools & Technologies
+- **TestRail** — test case management and test execution
+- **Jira** — bug reporting and issue tracking
+- **Postman** — REST API testing
+- **SQL** — basic database queries and data verification
+- **Git & GitHub** — version control and QA portfolio management
+- **Chrome DevTools** — basic web application analysis
+- **HTML & CSS** — basic knowledge
+- **REST API**
+- **HTTP methods & status codes**
+
+### Test Documentation
+- Test Plan
+- Test Scenarios
+- Test Cases
+- Checklists
+- Bug Reports
+- Test Summary Reports
+
+---
+
+## 🎓 Certifications & Training
+
+- 🏆 **ISTQB Certified Tester Foundation Level (CTFL)**
+- 📚 Software Testing Courses
+- 📚 Postman / REST API
+- 📚 SQL Fundamentals
+- 📚 Jira
+- 📚 HTML & CSS Fundamentals
+
+---
+
+# 🏦 Featured QA Project — ParaBank Manual Testing
+
+This repository presents my practical manual testing project based on the **ParaBank Demo** web application.
+
+The goal of the project was to simulate a real manual QA workflow — from test planning and test design through test execution to defect reporting and final test documentation.
+
+### 🔎 Project Scope
+
+The application was tested in the following functional areas:
+
+- Login
+- Registration
+- Accounts
+- Fund Transfer
+- Bill Payment
+- Profile & Password
+- Logout & Session
+
+A total of **45 test cases** were prepared and executed using **TestRail**.
+
+---
+
+## 📋 Test Documentation
+
+The project includes structured test documentation covering the testing process.
+
+➡️ [View Test Documentation](./test-documentation/)
+
+Documentation includes:
+
+- [Test Plan](./test-documentation/01_Test_Plan.md)
+- [Test Scenarios](./test-documentation/02_Test_Scenarios.md)
+- [Checklist](./test-documentation/05_Checklist.md)
+- [Test Summary Report](./test-documentation/06_Test_Summary_Report.md)
+
+---
+
+## 🧪 Test Cases & TestRail
+
+**45 manual test cases** were created and managed in TestRail.
+
+The test cases cover both positive and negative scenarios, including:
+
+- Valid and invalid authentication
+- Form validation
+- Transaction filtering
+- Fund transfers
+- Bill payments
+- Profile management
+- Session handling
+- Direct access to protected pages
+
+Test cases were executed as part of a dedicated Test Run, with results documented as **Passed, Failed, or Blocked**.
+
+---
+
+## 🐞 Bug Reports
+
+Defects discovered during test execution were documented as structured bug reports.
+
+➡️ [View Bug Reports](./bug-reports/)
+
+Each bug report contains:
+
+- Bug ID
+- Priority
+- TestRail Case ID
+- TestRail Test ID
+- Description
+- Preconditions
+- Steps to Reproduce
+- Expected Result
+- Actual Result
+- Test Environment
+- Screenshot Evidence
+
+### Selected Defects
+
+- [BUG-001 — Transaction History Filtering](./bug-reports/BUG-001_Activity_Period_Filter.md)
+- [BUG-002 — Zero Amount Fund Transfer](./bug-reports/BUG-002_Zero_Amount_Transfer.md)
+- [BUG-003 — Negative Amount Fund Transfer](./bug-reports/BUG-003_Negative_Amount_Transfer.md)
+- [BUG-004 — Zero Amount Bill Payment](./bug-reports/BUG-004_Zero_Amount_Bill_Payment.md)
+- [BUG-005 — Negative Amount Bill Payment](./bug-reports/BUG-005_Negative_Amount_Bill_Payment.md)
+- [BUG-006 — Profile Update Error](./bug-reports/BUG-006_Profile_Update_Error.md)
+- [BUG-007 — Invalid ZIP Code Error](./bug-reports/BUG-007_Invalid_ZIP_Code_Error.md)
+- [BUG-008 — Protected URL After Logout](./bug-reports/BUG-008_Direct_URL_After_Logout.md)
+
+---
+
+## 📸 Test Evidence
+
+Screenshots documenting defects and test execution are stored separately in the project.
+
+➡️ [View Screenshots](./screenshots/)
+
+---
+
+# 🛠 Tech Stack
+
+`TestRail` `Jira` `Postman` `SQL` `REST API` `Git` `GitHub` `Chrome DevTools` `HTML` `CSS`
+
+---
+
+# 🚀 Currently Learning
+
+I am continuously developing my QA skills, with a focus on:
+
+- Advanced API testing with Postman
+- SQL
+- Browser DevTools
+- Git & GitHub
+- Test automation fundamentals
+- Python fundamentals
+
+My next goal is to expand my portfolio with **API testing, SQL exercises, and basic test automation**.
+
+---
+
+# 🎯 Career Goal
+
+I am looking for my first professional opportunity as a **Junior Manual QA Tester / Junior Software Tester**.
+
+I want to use my previous professional experience, attention to detail, analytical thinking, and newly developed technical skills to contribute to software quality while continuing to grow toward **API testing and test automation**.
+
+---
+
+## 📫 Contact
+
+- **LinkedIn:** [Add your LinkedIn URL here]
+- **Email:** Add your email here
+- **GitHub:** [Add your GitHub profile URL here]
+
+---
+
+⭐ Thank you for visiting my QA portfolio.
