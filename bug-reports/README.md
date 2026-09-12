@@ -1,7 +1,15 @@
-# 🐞 Bug Reports
+# Bug Reports
 
-This folder contains bug reports identified during manual testing of the **ParaBank Demo** application.
+This folder contains **8 bug reports** found during manual testing of the ParaBank Demo application.
 
-Each report includes a description of the issue, steps to reproduce, expected and actual results, related TestRail Case/Test IDs, priority, and screenshot evidence.
+Each report includes:
 
-All defects were discovered during manual execution of test cases documented in TestRail.
+- steps to reproduce
+- expected and actual result
+- priority
+- related TestRail Case/Test ID
+- screenshot evidence
+
+The defects were identified while executing **45 manual test cases** in TestRail.
+
+Detailed results are available in the [Test Summary Report](../test-documentation/04_Test_Summary_Report.md).
