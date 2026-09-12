@@ -10,6 +10,7 @@
 | **Priority** | High |
 | **Status** | Open |
 | **TestRail Case ID** | C68 |
+| **TestRail Test ID** | T127 |
 | **Related Test Case** | Transfer funds with negative amount |
 | **Test Result** | Failed |
 
@@ -50,3 +51,8 @@ The application accepts the negative amount and completes the fund transfer succ
 - **Operating System:** Windows 11
 - **Browser:** Google Chrome
 
+## Evidence
+
+Screenshot showing the successful transaction with a negative amount.
+
+![BUG-003 Evidence](../screenshots/BUG-003.png)
