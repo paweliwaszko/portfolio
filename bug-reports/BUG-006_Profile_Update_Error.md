@@ -9,7 +9,12 @@
 | **Type** | Functional |
 | **Priority** | High |
 | **Status** | Open |
-| **Related Test Cases** | T140, T144 |
+| **Primary TestRail Case ID** | C81 |
+| **Primary TestRail Test ID** | T140 |
+| **Blocked TestRail Case ID** | C85 |
+| **Blocked TestRail Test ID** | T144 |
+| **Related Test Cases** | Update profile information with valid data / Verify updated profile data persists after re-login |
+| **Test Results** | T140 — Failed / T144 — Blocked |
 
 ## Description
 
@@ -43,7 +48,7 @@ The new information should be saved and displayed correctly when the profile pag
 
 The profile information cannot be updated successfully and the new data is not saved.
 
-As a result, test case **T144 — Verify updated profile data persists after re-login** cannot be completed.
+As a result, **C85 / T144 — Verify updated profile data persists after re-login** cannot be completed.
 
 ## Environment
 
