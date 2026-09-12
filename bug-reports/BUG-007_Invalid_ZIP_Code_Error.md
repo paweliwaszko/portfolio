@@ -56,8 +56,3 @@ No user-friendly validation message is displayed.
 - **Operating System:** Windows 11
 - **Browser:** Google Chrome
 
-## Evidence
-
-Screenshot showing the internal application error.
-
-![BUG-007 Evidence](../screenshots/BUG-007.png)
