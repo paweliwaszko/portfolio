@@ -9,7 +9,10 @@
 | **Type** | Validation / Error Handling |
 | **Priority** | Medium |
 | **Status** | Open |
-| **Related Test Case** | T143 — Update profile with invalid ZIP code |
+| **TestRail Case ID** | C84 |
+| **TestRail Test ID** | T143 |
+| **Related Test Case** | Update profile with invalid ZIP code |
+| **Test Result** | Failed |
 
 ## Description
 
