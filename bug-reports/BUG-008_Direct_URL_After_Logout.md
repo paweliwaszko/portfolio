@@ -9,7 +9,10 @@
 | **Type** | Error Handling |
 | **Priority** | Medium |
 | **Status** | Open |
-| **Related Test Case** | T147 — Access protected page using direct URL after logout |
+| **TestRail Case ID** | C88 |
+| **TestRail Test ID** | T147 |
+| **Related Test Case** | Access protected page using direct URL after logout |
+| **Test Result** | Failed |
 
 ## Description
 
