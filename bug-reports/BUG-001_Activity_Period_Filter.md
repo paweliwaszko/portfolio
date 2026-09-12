@@ -10,6 +10,7 @@
 | **Priority** | Medium |
 | **Status** | Open |
 | **TestRail Case ID** | C63 |
+| **TestRail Test ID** | T122 |
 | **Related Test Case** | Filter transactions by activity period |
 | **Test Result** | Failed |
 
