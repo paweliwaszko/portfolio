@@ -9,7 +9,9 @@
 | **Type** | Validation / Functional |
 | **Priority** | Medium |
 | **Status** | Open |
-| **Related Test Case** | T126 — Transfer funds with zero amount |
+| **TestRail Case ID** | C67 |
+| **Related Test Case** | Transfer funds with zero amount |
+| **Test Result** | Failed |
 
 ## Description
 
