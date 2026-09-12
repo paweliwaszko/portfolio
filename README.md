@@ -180,7 +180,7 @@ I want to use my previous professional experience, attention to detail, analytic
 
 ## 📫 Contact
 
-- **LinkedIn:** 💼 [LinkedIn – Paweł Iwaszko](https://www.linkedin.com/in/pawe%C5%82-iwaszko-a73793344/)
+- **LinkedIn:** 💼 [Paweł Iwaszko](https://www.linkedin.com/in/pawe%C5%82-iwaszko-a73793344/)
 - **Email:** pawel.iwaszko2@gmail.com
 
 
