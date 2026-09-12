@@ -9,7 +9,10 @@
 | **Type** | Validation / Functional |
 | **Priority** | High |
 | **Status** | Open |
-| **Related Test Case** | T138 — Bill payment with negative amount |
+| **TestRail Case ID** | C79 |
+| **TestRail Test ID** | T138 |
+| **Related Test Case** | Bill payment with negative amount |
+| **Test Result** | Failed |
 
 ## Description
 
