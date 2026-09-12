@@ -91,8 +91,8 @@ Documentation includes:
 
 - [Test Plan](./test-documentation/01_Test_Plan.md)
 - [Test Scenarios](./test-documentation/02_Test_Scenarios.md)
-- [Checklist](./test-documentation/05_Checklist.md)
-- [Test Summary Report](./test-documentation/06_Test_Summary_Report.md)
+- [Checklist](./test-documentation/03_Test_Cases.md)
+- [Test Summary Report](./test-documentation/04_Test_Summary_Report.md)
 
 ---
 
