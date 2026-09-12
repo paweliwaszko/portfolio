@@ -10,6 +10,7 @@
 | **Priority** | Medium |
 | **Status** | Open |
 | **TestRail Case ID** | C67 |
+| **TestRail Test ID** | T126 |
 | **Related Test Case** | Transfer funds with zero amount |
 | **Test Result** | Failed |
 
