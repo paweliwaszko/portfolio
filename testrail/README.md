@@ -12,7 +12,7 @@ The TestRail project is private, therefore exported test cases and test executio
 
 The complete set of 45 test cases exported from TestRail is available here:
 
-➡️ [View / Download Test Cases](./ParaBank_Test_Cases.xlsx)
+➡️ [View / Download Test Cases](./parabank_manual_testing (1).xlsx)
 
 The test cases include preconditions, test steps, expected results, and other information used during test execution.
 
