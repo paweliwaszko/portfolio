@@ -9,7 +9,9 @@
 | **Type** | Validation / Functional |
 | **Priority** | Medium |
 | **Status** | Open |
-| **Related Test Case** | T137 — Bill payment with zero amount |
+| **TestRail Case ID** | C78 |
+| **Related Test Case** | Bill payment with zero amount |
+| **Test Result** | Failed |
 
 ## Description
 
