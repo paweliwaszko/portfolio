@@ -9,7 +9,7 @@
 | **Type** | Functional |
 | **Priority** | Medium |
 | **Status** | Open |
-| **TestRail Test ID** | T122 |
+| **TestRail Case ID** | C63 |
 | **Related Test Case** | Filter transactions by activity period |
 | **Test Result** | Failed |
 
@@ -41,9 +41,6 @@ Only transactions matching the selected activity period (**January**) should be 
 ## Actual Result
 
 A transaction from **September** is displayed even though **January** is selected as the activity period.
-
-**TestRail Test ID:** T122  
-**Test Result:** Failed
 
 ## Environment
 
