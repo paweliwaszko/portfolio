@@ -1,12 +1,4 @@
-# 🐞 BUG-001 — Transaction History Ignores Selected Activity Period
-
-## Summary
-
-The transaction history displays transactions outside the activity period selected by the user.
-
-When **January** is selected from the **Activity Period** filter, a transaction from **September** is still displayed in the transaction list.
-
----
+# BUG-001 — Transaction History Displays Transactions Outside the Selected Activity Period
 
 ## Bug Details
 
@@ -14,71 +6,49 @@ When **January** is selected from the **Activity Period** filter, a transaction 
 |---|---|
 | **Bug ID** | BUG-001 |
 | **Module** | Accounts / Transaction History |
-| **Severity** | Medium |
+| **Type** | Functional |
 | **Priority** | Medium |
 | **Status** | Open |
-| **Type** | Functional |
-| **Reproducibility** | 100% (3/3 attempts) |
+| **Related Test Case** | T122 — Filter transactions by activity period |
 
----
+## Description
 
-## Environment
+The transaction history filtering functionality does not respect the activity period selected by the user.
 
-| Field | Value |
-|---|---|
-| **Application** | ParaBank Demo |
-| **Platform** | Web |
-| **Operating System** | Windows 11 |
-| **Browser** | Google Chrome |
-
----
+After selecting **January** from the Activity Period filter, a transaction from **September** is still displayed in the transaction list.
 
 ## Preconditions
 
 - The user is logged in to ParaBank.
-- The user has at least one bank account.
-- The selected account contains a transaction from September.
-
----
+- The user has at least one account.
+- The selected account contains transaction history.
 
 ## Steps to Reproduce
 
-1. Log in to ParaBank.
+1. Log in to ParaBank using valid credentials.
 2. Navigate to **Accounts Overview**.
-3. Select an account containing transaction history.
+3. Open an account containing transaction history.
 4. Select **January** from the **Activity Period** dropdown.
 5. Click the **Go** button.
 6. Review the displayed transaction list.
-
----
 
 ## Expected Result
 
 Only transactions matching the selected activity period (**January**) should be displayed.
 
----
-
 ## Actual Result
 
 A transaction from **September** is displayed even though **January** is selected as the activity period.
 
----
+## Environment
+
+- **Application:** ParaBank Demo
+- **Platform:** Web
+- **Operating System:** Windows 11
+- **Browser:** Google Chrome
 
 ## Evidence
 
-Screenshot showing the selected **January** activity period and the transaction from **September**:
+Screenshot showing the selected activity period and the incorrectly displayed transaction.
 
-![BUG-001 - Incorrect activity period filtering](../../screenshots/BUG-001.png)
-
----
-
-## Related Test Case
-
-**Test Case:** Filter transactions by activity period  
-**Test Result:** ❌ Failed
-
----
-
-## Notes
-
-The issue affects transaction history filtering and may cause users to receive incorrect results when reviewing transactions for a specific period.
+![BUG-001 Evidence](../screenshots/BUG-001.png)
