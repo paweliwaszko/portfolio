@@ -98,20 +98,13 @@ Documentation includes:
 
 ## 🧪 Test Cases & TestRail
 
-**45 manual test cases** were created and managed in TestRail.
+A total of **45 manual test cases** were created, managed, and executed using **TestRail**.
 
-The test cases cover both positive and negative scenarios, including:
+The TestRail project includes structured test cases with preconditions, test steps, expected results, and execution statuses.
 
-- Valid and invalid authentication
-- Form validation
-- Transaction filtering
-- Fund transfers
-- Bill payments
-- Profile management
-- Session handling
-- Direct access to protected pages
+➡️ [View TestRail Test Cases & Execution Evidence](./testrail/)
 
-Test cases were executed as part of a dedicated Test Run, with results documented as **Passed, Failed, or Blocked**.
+The test cases cover both positive and negative scenarios across the main functional areas of the ParaBank application.
 
 ---
 
