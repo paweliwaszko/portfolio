@@ -10,6 +10,7 @@
 | **Priority** | Medium |
 | **Status** | Open |
 | **TestRail Case ID** | C78 |
+| **TestRail Test ID** | T137 |
 | **Related Test Case** | Bill payment with zero amount |
 | **Test Result** | Failed |
 
