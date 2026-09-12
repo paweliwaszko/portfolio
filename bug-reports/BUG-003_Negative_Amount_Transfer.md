@@ -9,7 +9,9 @@
 | **Type** | Validation / Functional |
 | **Priority** | High |
 | **Status** | Open |
-| **Related Test Case** | T127 — Transfer funds with negative amount |
+| **TestRail Case ID** | C68 |
+| **Related Test Case** | Transfer funds with negative amount |
+| **Test Result** | Failed |
 
 ## Description
 
