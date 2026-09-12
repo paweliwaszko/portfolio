@@ -1,22 +1,29 @@
-# ✅ ParaBank — Testing Checklist
+# 📊 ParaBank — Test Summary Report
 
 ## 📌 Overview
 
-This checklist presents a high-level verification of the main functionalities of the **ParaBank Demo** application.
+This document summarizes the results of manual functional testing performed on the **ParaBank Demo** application.
 
-The checklist was executed during manual testing. Failed checks are linked directly to the corresponding bug reports.
-
-### Status Legend
-
-- ✅ **Passed** — functionality works as expected
-- ❌ **Failed** — functionality does not work as expected
-- ⛔ **Blocked** — test could not be completed due to another defect
+A total of **45 test cases** were executed using **TestRail**. The testing covered the main functional areas of the application, including authentication, registration, account management, fund transfers, bill payments, profile management, and session handling.
 
 ---
 
-## 🔐 01 — Login
+## 📊 Test Execution Summary
 
-| ID | Check | Status |
+| Status | Test Cases | Percentage |
+|---|---:|---:|
+| ✅ Passed | 36 | 80.0% |
+| ❌ Failed | 8 | 17.8% |
+| ⛔ Blocked | 1 | 2.2% |
+| **Total** | **45** | **100%** |
+
+---
+
+## 🧪 Test Results
+
+### 🔐 01 — Login
+
+| Case ID | Test Case | Result |
 |---|---|---|
 | C46 | Login with valid credentials | ✅ Passed |
 | C47 | Login with invalid password | ✅ Passed |
@@ -29,9 +36,9 @@ The checklist was executed during manual testing. Failed checks are linked direc
 
 ---
 
-## 👤 02 — Registration
+### 👤 02 — Registration
 
-| ID | Check | Status |
+| Case ID | Test Case | Result |
 |---|---|---|
 | C53 | Register a new user with valid data | ✅ Passed |
 | C54 | Registration with all required fields empty | ✅ Passed |
@@ -42,9 +49,9 @@ The checklist was executed during manual testing. Failed checks are linked direc
 
 ---
 
-## 💳 03 — Accounts
+### 💳 03 — Accounts
 
-| ID | Check | Status |
+| Case ID | Test Case | Result |
 |---|---|---|
 | C59 | View Accounts Overview after successful login | ✅ Passed |
 | C60 | View account details | ✅ Passed |
@@ -55,9 +62,9 @@ The checklist was executed during manual testing. Failed checks are linked direc
 
 ---
 
-## 💸 04 — Fund Transfer
+### 💸 04 — Fund Transfer
 
-| ID | Check | Status |
+| Case ID | Test Case | Result |
 |---|---|---|
 | C65 | Transfer funds between accounts with valid data | ✅ Passed |
 | C66 | Transfer funds with empty amount | ✅ Passed |
@@ -72,9 +79,9 @@ The checklist was executed during manual testing. Failed checks are linked direc
 
 ---
 
-## 🧾 05 — Bill Payment
+### 🧾 05 — Bill Payment
 
-| ID | Check | Status |
+| Case ID | Test Case | Result |
 |---|---|---|
 | C75 | Pay a bill with valid data | ✅ Passed |
 | C76 | Bill payment with all required fields empty | ✅ Passed |
@@ -85,9 +92,9 @@ The checklist was executed during manual testing. Failed checks are linked direc
 
 ---
 
-## 👤 06 — Profile & Password
+### 👤 06 — Profile & Password
 
-| ID | Check | Status |
+| Case ID | Test Case | Result |
 |---|---|---|
 | C81 | Update profile information with valid data | ❌ Failed — [BUG-006](../bug-reports/BUG-006_Profile_Update_Error.md) |
 | C82 | Update profile with required fields empty | ✅ Passed |
@@ -95,13 +102,11 @@ The checklist was executed during manual testing. Failed checks are linked direc
 | C84 | Update profile with invalid ZIP code | ❌ Failed — [BUG-007](../bug-reports/BUG-007_Invalid_ZIP_Code_Error.md) |
 | C85 | Verify updated profile data persists after re-login | ⛔ Blocked — [BUG-006](../bug-reports/BUG-006_Profile_Update_Error.md) |
 
-> **Note:** The TestRail section retains the name **Profile & Password**, although the tested version of ParaBank does not provide password-change functionality.
-
 ---
 
-## 🚪 07 — Logout & Session
+### 🚪 07 — Logout & Session
 
-| ID | Check | Status |
+| Case ID | Test Case | Result |
 |---|---|---|
 | C86 | Successful logout | ✅ Passed |
 | C87 | Access protected page after logout | ✅ Passed |
@@ -110,31 +115,34 @@ The checklist was executed during manual testing. Failed checks are linked direc
 
 ---
 
-# 📊 Checklist Summary
+## 🐞 Defect Summary
 
-| Result | Number |
+During test execution, **8 defects** were identified and documented.
+
+| Priority | Defects |
 |---|---:|
-| ✅ Passed | 36 |
-| ❌ Failed | 8 |
-| ⛔ Blocked | 1 |
-| **Total** | **45** |
+| 🔴 High | 3 |
+| 🟡 Medium | 5 |
+| **Total** | **8** |
+
+Detailed reports are available in the [`bug-reports`](../bug-reports/) directory.
 
 ---
 
-## 🐞 Defects
+## 🎯 Conclusion
 
-A total of **8 defects** were documented during test execution.
+The majority of the tested ParaBank functionality worked as expected, with **36 of 45 test cases passing successfully**.
 
-Detailed defect reports are available in the [`bug-reports`](../bug-reports/) directory.
+The most significant issues were identified in:
 
-Screenshot evidence for reported defects is available in the [`screenshots`](../screenshots/) directory.
+- Fund transfer amount validation
+- Bill payment amount validation
+- Profile information updates
+- Transaction history filtering
+- Error handling and session-related behavior
 
----
+A total of **8 defects** were documented, including **3 High-priority** and **5 Medium-priority** issues.
 
-## 📝 Notes
+One test case was blocked because successful profile updating was required before profile data persistence could be verified.
 
-This checklist provides a high-level overview of the executed manual tests.
-
-The IDs used in this checklist correspond directly to the **TestRail Case IDs**, allowing each checklist item to be easily matched with its detailed test case in TestRail.
-
-Detailed test cases include preconditions, test steps, expected results, and execution results.
+Based on the test results, the application requires fixes in the identified areas followed by **retesting and regression testing**.
