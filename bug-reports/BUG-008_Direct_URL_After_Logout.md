@@ -60,8 +60,3 @@ Access to the protected functionality is denied, but the application displays:
 
 The access restriction itself works, but unauthorized access attempts are handled incorrectly and result in a generic internal application error.
 
-## Evidence
-
-Screenshot showing the internal error after attempting to access the protected URL.
-
-![BUG-008 Evidence](../screenshots/BUG-008.png)
